@@ -1,0 +1,389 @@
+/* =========================
+   GRUNNINNSTILLINGER
+   ========================= */
+
+/* Dette gjelder hele nettsiden */
+* {
+    box-sizing: border-box;
+}
+
+/* Selve siden */
+body {
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+
+    /* Bakgrunnsfarge */
+    background-color: #ffffff;
+
+    /* Tekstfarge */
+    color: #222222;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MENY
+   ========================= */
+
+header {
+    border-bottom: 0.0625em solid #dddddd;
+    background-color: white;
+}
+
+/* =========================
+   LOGO
+   ========================= */
+.logo {
+    position: absolute;
+    left: 13.9375em;
+    top: 0.0625em;
+}
+
+.logo img {
+    width: 5em; /* Endre dette for å gjøre logoen større/mindre */
+    height: auto;
+}
+
+/* Innholdet i menyen */
+nav {
+    max-width: 68.75em;
+    margin: auto;
+
+    padding: 1.25em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navnet ditt */
+nav h2 {
+    margin: 0;
+    margin-left: 3.25em;
+    transform: translateY(0em);
+
+    /* Rød farge */
+    color: #B41710;
+}
+
+/* Menylenkene */
+.menu {
+    display: flex;
+    gap: 1.5625em;
+}
+
+/* Alle lenker */
+a {
+    color: #222222;
+    text-decoration: none;
+}
+
+/* Når du holder musen over en lenke */
+a:hover {
+    color: #B41710;
+}
+
+
+/* =========================
+   GENERELLE SEKSJONER
+   ========================= */
+
+section {
+    max-width: 68.75em;
+
+    /* Lager plass på sidene */
+    margin: auto;
+
+    /* Lager avstand mellom delene */
+    padding:    5em 1.25em;
+}
+
+/* Overskrifter */
+section h2 {
+    font-size: 2.25em;
+    margin-bottom: 0.005em;
+}
+
+
+/* =========================
+   FORSIDE
+   ========================= */
+
+.hero {
+    min-height: 37.5em;
+
+    display: grid;
+
+    /* To kolonner */
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 3.75em;
+}
+
+/* Liten tekst over hovedoverskriften */
+.small-text {
+    color: #B41710;
+    font-weight: 700;
+    position: absolute;
+    top: 0em;
+    left: 31.25em;
+    margin-bottom: -0.625em;
+}
+
+/* Stor overskrift */
+.hero h1 {
+    font-size: 4.375em;
+    line-height: 1;
+    margin: 0 0 0.3em 0;
+    position: relative;
+    left: 0em;
+    top: 0em;
+}
+
+.tek {
+    transform: translate(4.5px, -20px);
+
+}
+
+/* Beskrivelsen på forsiden */
+.hero p {
+     position: relative;
+    left: 0.4375em;
+    top: -1.25em;
+    max-width: 31.25em;
+}
+
+/* =========================
+   KNAPP
+   ========================= */
+
+.button {
+    display: inline-block;
+ position: relative;
+    left: 0.40625em;
+    top: -1.75em;
+
+    margin-top: 1.25em;
+
+    padding: 0.75em 1.5625em;
+
+    background-color: #B41710;
+/* TEKSTEN PÅ KNAPPEN */
+    color: white;
+
+    border-radius: 0.3125em;
+}
+
+/* Når musen er over knappen */
+.button:hover {
+    background-color: #900603;
+/* TEKSTEN PÅ KNAPPEN */
+    color: white;
+}
+
+
+/* =========================
+   BILDER
+   ========================= */
+
+.hero-image img {
+    width: 100%;
+    max-width: 28.125em;
+
+    display: block;
+
+    margin: auto;
+
+    /* Litt avrundede hjørner */
+    border-radius: 0.625em;
+}
+
+/* Prosjektbildene */
+.project img {
+    width: 100%;
+
+    height: 13.75em;
+
+    object-fit: cover;
+
+    border-radius: 0.3125em;
+}
+
+
+/* =========================
+   OM MEG
+   ========================= */
+
+.about {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 3.75em;
+}
+
+/* Liste */
+.about ul {
+    padding-left: 1.25em;
+}
+
+
+/* =========================
+   PROSJEKTER
+   ========================= */
+
+.projects {
+    display: grid;
+
+    /* To kolonner */
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1.875em;
+
+    margin-top: 1.875em;
+}
+
+.projects_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Hvert prosjekt */
+.project {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 0.5em;
+
+    border: 0.0625em solid #dddddd;
+
+    padding: 1.25em;
+
+    border-radius: 0.5em;
+    background-color: #fafafa;
+
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* Prosjektnavn */
+.project h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    /*margin-bottom: 0.5em;*/
+}
+
+.project p {
+    margin-top: 0em;
+    /*margin-bottom: 0.5em;*/
+}
+
+
+/* =========================
+   FERDIGHETER
+   ========================= */
+
+.skills {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0.9375em;
+
+    margin-top: 1.875em;
+}
+
+/* Hver ferdighet */
+.skills div {
+    padding: 1.25em;
+
+    background-color: #f4f4f4;
+
+    border-left: 0.25em solid #8b1e2d;
+}
+
+
+/* =========================
+   KONTAKT
+   ========================= */
+
+#kontakt {
+    background-color: #f7f7f7;
+
+    max-width: none;
+
+    padding-left: max(1.25em, calc((100% - 66.25em) / 2));
+    padding-right: max(1.25em, calc((100% - 66.35em) / 2));
+}
+
+#kontakt a {
+    color: #8b1e2d;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+
+    padding: 1.25em;
+
+    background-color: #222222;
+
+    color: white;
+}
+
+
+/* =========================
+   MOBIL
+   ========================= */
+
+/* Dette gjør siden bedre på mobil */
+@media (max-width: 43.75em) {
+
+    /* Menyen blir mindre */
+    nav {
+        flex-direction: column;
+        gap: 0.9375em;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Forsiden blir én kolonne */
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    /* Mindre overskrift på mobil */
+    .hero h1 {
+        font-size: 3.125em;
+    }
+
+    /* Om meg blir én kolonne */
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    /* Prosjektene blir én kolonne */
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ferdighetene blir én kolonne */
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
